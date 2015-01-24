@@ -8,8 +8,6 @@ set wmh=0 " minimum window height to 0, stack more files, only display the filen
 set tabstop=2 " set the default tabstop
 set expandtab " make tabs into spaces (set by tabstop)
 
-
-
 syntax on
 
 set rtp+=~/.vim/bundle/vundle/
