@@ -3,3 +3,4 @@
 	email = 4lls@email.com
 [alias]
 	create = !sh -c \"curl -u \\\"4lls\\\" https://api.github.com/user/repos -d \\\"{\\\\\\\"name\\\\\\\":\\\\\\\"$1\\\\\\\"}\\\" && git remote add $2 git@github.com:4lls/$1.git\" -
+  ss = status --short

@@ -3,19 +3,21 @@ filetype off                  " required
 
 set autoindent
 set cindent
-set shiftwidth=2
-set wmh=0 " minimum window height to 0, stack more files, only display the filename.
+set shiftwidth=2 " set default auto indent
+set wmh=0 " more file windows
 set tabstop=2 " set the default tabstop
 set expandtab " make tabs into spaces (set by tabstop)
+map <C-J> <C-W>j<C-W>_ " max windows and quick switch between them
+map <C-K> <C-W>k<C-W>_ " ctrl-j to move down, ctrl-k oppsite
+map <C-_> <C-W>_       " max current window
 
 syntax on
-
 set rtp+=~/.vim/bundle/vundle/
 call vundle#begin()
-Plugin 'gmarik/Vundle.vim'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'kien/ctrlp.vim'
-Plugin 'tpope/vim-fugitive'
+Plugin 'gmarik/Vundle.vim'      " plugins manager
+Plugin 'Valloric/YouCompleteMe' " auto complete
+Plugin 'kien/ctrlp.vim'         " quick search
+Plugin 'tpope/vim-fugitive'     " Git wrapper
 Plugin 'scrooloose/nerdtree'
 
 " open NERDTree when vim starts with no specified file.
