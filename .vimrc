@@ -13,14 +13,25 @@ map <C-_> <C-W>_       " max current window
 map - <C-W>-  "
 map + <C-W>+  " resize vertical split windows less/more
 map = <C-W>=  " resize all windows to equal size
-"map <M-<> <C-W><
-"map <M->> <C-W>>
-nmap ,h :tabr<CR> " first tab jump
-nmap ,l :tabl<CR> " last tab
-nmap ,j :tabp<CR> " previous tab
-nmap ,k :tabn<CR> " next tab
-nmap ,' :tabc<CR> " tab close
-nmap ,n <ESC>:tabnew<CR>  " new tab
+"nmap <S-<> <C-W><
+"nmap <S->> <C-W>>
+
+" tab shortcuts
+nmap ,n :tabnew<CR> " new 
+nmap ,h :tabr<CR>   " first
+nmap ,l :tabl<CR>   " last
+nmap ,j :tabp<CR>   " previous
+nmap ,k :tabn<CR>   " next
+nmap ,' :tabc<CR>   " close
+
+" window shortcuts
+map ;n  <C-W>n<CR>  " new horizontal
+map ;;n <C-W>v<CR>  " new vertical
+map ;j  <C-W>j<CR>  " down
+map ;k  <C-W>k<CR>  " up
+map ;h  <C-W>h<CR>  " left
+map ;l  <C-W>l<CR>  " right
+map ;m  <C-W>q<CR>  " close
 
 syntax on
 set rtp+=~/.vim/bundle/vundle/
