@@ -11,6 +11,7 @@ Plugin 'scrooloose/nerdtree'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+set wildmenu
 set autoindent
 set smartindent
 set shiftround
@@ -42,6 +43,7 @@ set matchtime=5
 set novisualbell
 set noerrorbells
 set laststatus=2
+set background=light
 
 imap jk	<ESC> 
 nnoremap <C-S-J> <C-W>j<C-W>_ " 
