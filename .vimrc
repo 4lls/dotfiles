@@ -10,6 +10,12 @@ set expandtab " make tabs into spaces (set by tabstop)
 map <C-J> <C-W>j<C-W>_ " max windows and quick switch between them
 map <C-K> <C-W>k<C-W>_ " ctrl-j to move down, ctrl-k oppsite
 map <C-_> <C-W>_       " max current window
+map - <C-W>-  " resize vertical split window
+map + <C-W>+  "
+map = <C-W>=  " resize all windows to equal size
+"map <M-<> <C-W><
+"map <M->> <C-W>>
+imap ,t <ESC>:tabnew<CR>  " ,t --> newtab in insertmode
 
 syntax on
 set rtp+=~/.vim/bundle/vundle/
